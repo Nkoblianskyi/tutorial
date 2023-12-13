@@ -13,7 +13,7 @@ body
 
 
 .card {
-    width: 300px;
+    width: 0px;
     height: auto;
     min-height: 390px;
     background: #fff;
@@ -30,7 +30,7 @@ body
 .image {
     width: calc(100%-60px);
     margin: 0px 30px;
-    margin-top: -90px;
+    margin-top: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@ body
     }
 }
 
-h3 {
+h30 {
     position: absolute;
     font-family: 'Oswald', sans-serif;
     left: 0px;
