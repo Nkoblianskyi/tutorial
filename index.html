@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
@@ -11,122 +12,115 @@
 <body>
     <header class="page-header">
         <nav>
-            <a href="./index.html">
-                <a class="logo-header link" href="./index.html">
-                    <span class="logo-header-left">Web</span>
-                    <span class="logo-header-right">Studio</span>
+                <a class="logo" href="./index.html"><span class="logo-header-left">Web</span><span class="logo-header-right">Studio</span>
                 </a>
-            </a>
-        <ul>
-            <li>
-                <a href="">Студія</a>
-            </li>
-            <li>
-                <a href="/portfolio.html">Портфоліо</a>
-            </li>
-            <li>
-                <a href="">Контакти</a>
-            </li>
-        </ul>
+            <ul class="menu">
+                <li>
+                    <a class="menu-studio" href="">Студія</a>
+                </li>
+                <li>
+                    <a class="menu-portfolio" href="/portfolio.html">Портфоліо</a>
+                </li>
+                <li>
+                    <a class="menu-contact" href="">Контакти</a>
+                </li>
+            </ul>
+            <a class="header-contact-mail" href="milto:info@devstudio.com ">info@devstudio.com</a>
+            <a class="header-contact-tel" href="tel:+38961111111">+38 096 111 11 11</a>
         </nav>
+        
     </header>
 <main>
-            <a href="milto:info@devstudio.com ">info@devstudio.com</a>
-            <a href="tel:+38961111111">+38 096 111 11 11</a>
+    <div class="hero">
+        <section class="hero-section">
+            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+            <button type="button" class="hero-btn">Замовити послугу</button>
+        </section>
+    </div>
         <div>
-            <section>
-                    <h1>Ефективні рішення для вашого бізнесу</h1>
-                    <button type="btn">Замовити послугу</button>
-            </section>
+            <ul class="about-list list">
+            <li>
+                <h3 class="about-text">УВАГА ДО ДЕТАЛЕЙ </h3>
+                <p class="about-text-items">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            </li>
+            <li>
+                <p class="about-text">
+                    ПУНКТУАЛЬНІСТЬ
+                </p>
+                <h3 class="about-text-items">
+                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </h3>
+            </li>
+            <li>
+                <p class="about-text">
+                    ПЛАНУВАННЯ
+                </p>
+                <span class="about-text-items">
+                    Так само консультація з широким активом значною мірою зумовлює.
+                </span>
+            </li>
+            <li>
+                <p class="about-text">
+                    СУЧАСНІ ТЕХНОЛОГІЇ
+                </p>
+                <span class="about-text-items">
+                    Значимість цих проблем настільки очевидна, що реалізація планових завдань.
+                </span>
+            </li>
+            </ul>
         </div>
-            <section>
-                <ul>
-                    <li>
-                        <h2>
-                            УВАГА ДО ДЕТАЛЕЙ
-                        </h2>
-                        <p>
-                            Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>
-                            ПУНКТУАЛЬНІСТЬ
-                        </h2>
-                        <p>
-                            Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>
-                            ПЛАНУВАННЯ
-                        </h2>
-                        <p>
-                            Так само консультація з широким активом значною мірою зумовлює.
-                        </p>
-                    </li>
-                    <li>
-                        <h2>
-                            СУЧАСНІ ТЕХНОЛОГІЇ
-                        </h2>
-                        <p>
-                            Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                        </p>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Чим ми займаємося</h2>
-                        <img 
+        <div class="gallery">
+            <h2 class="gallery-items">Чим ми займаємося</h2>
+                        <img class="gallery-photo" 
                         src="./images/box-1.jpg" 
                         alt="працює за комп"
                         width="370"
                         height="346"
                         >
-                        <img src="./images/box-2.jpg" alt="палить в телефон" width="370" height="346">
-                        <img src="./images/box-3.jpg" alt="тупить в планшеті" width="370" height="346">
-            </section>
-            <section>
-                <h2>Дійові Особи</h2>
-                <ul>
+                        <img class="gallery-photo" src="./images/box-2.jpg" alt="палить в телефон" width="370" height="346">
+                        <img class="gallery-photo" src="./images/box-3.jpg" alt="тупить в планшеті" width="370" height="346">
+        </div>
+        <div class="team">
+                <h2 class="team-tex">Дійові Особи</h2>
+                <ul class="team-list list">
                     <li>
-                        <img src="./images/igor.jpg" alt="чоловік Ігор">
-                        <p>Гамлєт</p>
-                        <p>	Датський кацап</p>
+                        <img class="team-photo" src="./images/igor.jpg" alt="чоловік Ігор">
+                        <p class="team-name">Гамлєт</p>
+                        <p class="team-name-text">	Датський кацап</p>
                     </li>
                     <li>
-                        <img src="./images/olga.jpg" alt="Ж">
-                        <p>Маргарита</p>
-                        <p>Мати Гамлєта</p>
+                        <img class="team-photo" src="./images/olga.jpg" alt="Ж">
+                        <p class="team-name">Маргарита</p>
+                        <p class="team-name-text">Мати Гамлєта</p>
                     </li>
                     <li>
-                        <img src="./images/misha.jpg" alt="m">
-                        <p>Привид</p>
-                        <p>Страшне чудо, старанно прикрите замизганим в багнюку і сукровицю простирадлом</p>
+                        <img class="team-photo" src="./images/misha.jpg" alt="m">
+                        <p class="team-name">Привид</p>
+                        <p class="team-name-text">Страшне чудо, старанно прикрите замизганим в багнюку і сукровицю простирадлом</p>
                     </li>
                     <li>
-                        <img src="./images/mykola.jpg" alt="m">
-                        <p>Клавдій</p>
-                        <p>	Хтивий дядько принца</p>
+                        <img class="team-photo" src="./images/mykola.jpg" alt="m">
+                        <p class="team-name">Клавдій</p>
+                        <p class="team-name-text">	Хтивий дядько принца</p>
                     </li>
                 </ul>
-            </section>
+    </div>
 </main>
-        <footer>
+        <footer class="footer">
                 <a class="logo-header link" href="./index.html">
                     <span class="logo-header-left">Web</span>
                     <span class="logo-header-right">Studio</span>
                 </a>
             <address>
-                <ul>
+                <ul class="footer-ul">
                     <li>
-                        <a href="https://maps.app.goo.gl/AFyEZ38HmAE176y47">Кронборг 1B, 3000 Хельсінгур, Данія</a>
+                        <a class="map" target="blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/AFyEZ38HmAE176y47">Кронборг 1B, 3000 Хельсінгур, Данія</a>
                     </li>
                     <li>
-                        <a href="milto:info@devstudio.com ">info@devstudio.com</a>
+                        <a class="contact-mail" href="milto:info@devstudio.com ">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a href="tel:+38961111111">+38 096 111 11 11</a>
+                        <a class="contact-tel" href="tel:+38961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
