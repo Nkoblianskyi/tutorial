@@ -4,126 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
+    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header class="page-header">
-        <nav>
-                <a class="logo" href="./index.html"><span class="logo-header-left">Web</span><span class="logo-header-right">Studio</span>
-                </a>
-            <ul class="menu">
-                <li>
-                    <a class="menu-studio" href="">Студія</a>
-                </li>
-                <li>
-                    <a class="menu-portfolio" href="/portfolio.html">Портфоліо</a>
-                </li>
-                <li>
-                    <a class="menu-contact" href="">Контакти</a>
-                </li>
-            </ul>
-            <a class="header-contact-mail" href="milto:info@devstudio.com ">info@devstudio.com</a>
-            <a class="header-contact-tel" href="tel:+38961111111">+38 096 111 11 11</a>
-        </nav>
-        
+        <div class="menu-header container">
+        <nav class="navigation">    
+            <a class="logo nav" href="./index.html"><span class="logo-header-left">Web</span><span class="logo-header-right">Studio</span>
+            </a>
+                <div class="menu">
+                <ul class="menu-table">
+                    <li class="menu-item">
+                        <a class="menu-studio nav" href="">Студія</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-portfolio nav" href="/portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-contact nav" href="">Контакти</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+            <div class="header-connect">
+                <a class="header-contact-mail header-contact nav" href="milto:info@devstudio.com ">info@devstudio.com</a>
+                <a class="header-contact-tel header-contact nav" href="tel:+38961111111">+38 096 111 11 11</a>
+            </div>
+        </div>
     </header>
 <main>
-    <div class="hero">
-        <section class="hero-section">
+    <section class="hero-back">
+        <div class="hero container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn">Замовити послугу</button>
-        </section>
-    </div>
-        <div>
+            <button type="button" class="hero-btn button">Замовити послугу</button>
+        </div>
+    </section>
+        <div class="about-li container">
             <ul class="about-list list">
-            <li>
-                <h3 class="about-text">УВАГА ДО ДЕТАЛЕЙ </h3>
+            <li class="about-list-text">
+                <h3 class="about-text">
+                    УВАГА ДО ДЕТАЛЕЙ 
+                </h3>
                 <p class="about-text-items">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
             </li>
-            <li>
-                <p class="about-text">
+            <li class="about-list-text">
+                <h3 class="about-text">
                     ПУНКТУАЛЬНІСТЬ
-                </p>
-                <h3 class="about-text-items">
-                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
                 </h3>
+                <p class="about-text-items">
+                    Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
+                </p>
             </li>
-            <li>
-                <p class="about-text">
+            <li class="about-list-text">
+                <h3 class="about-text">
                     ПЛАНУВАННЯ
-                </p>
-                <span class="about-text-items">
+                </h3>
+                <p class="about-text-items">
                     Так само консультація з широким активом значною мірою зумовлює.
-                </span>
-            </li>
-            <li>
-                <p class="about-text">
-                    СУЧАСНІ ТЕХНОЛОГІЇ
                 </p>
-                <span class="about-text-items">
+            </li>
+            <li class="about-list-text">
+                <h3 class="about-text">
+                    СУЧАСНІ ТЕХНОЛОГІЇ
+                </h3>
+                <p class="about-text-items">
                     Значимість цих проблем настільки очевидна, що реалізація планових завдань.
-                </span>
+                </p>
             </li>
             </ul>
         </div>
-        <div class="gallery">
+        <div class="gallery container">
             <h2 class="gallery-items">Чим ми займаємося</h2>
-                        <img class="gallery-photo" 
-                        src="./images/box-1.jpg" 
-                        alt="працює за комп"
-                        width="370"
-                        height="346"
-                        >
-                        <img class="gallery-photo" src="./images/box-2.jpg" alt="палить в телефон" width="370" height="346">
-                        <img class="gallery-photo" src="./images/box-3.jpg" alt="тупить в планшеті" width="370" height="346">
+                        <img class="gallery-photo" src="./images/box-1.jpg" alt="працює за комп">
+                        <img class="gallery-photo" src="./images/box-2.jpg" alt="палить в телефон">
+                        <img class="gallery-photo" src="./images/box-3.jpg" alt="тупить в планшеті">
         </div>
-        <div class="team">
-                <h2 class="team-tex">Дійові Особи</h2>
-                <ul class="team-list list">
-                    <li>
+        <section class="team">
+        <div class="container">
+            <h2 class="team-tex">Дійові Особи</h2>
+            <div class="team-table">
+                <ul class="team-list-table">
+                    <li class="team-list">
                         <img class="team-photo" src="./images/igor.jpg" alt="чоловік Ігор">
-                        <p class="team-name">Гамлєт</p>
+                        <h3 class="team-name">Гамлєт</h3>
                         <p class="team-name-text">	Датський кацап</p>
                     </li>
-                    <li>
+                    <li class="team-list">
                         <img class="team-photo" src="./images/olga.jpg" alt="Ж">
-                        <p class="team-name">Маргарита</p>
+                        <h3 class="team-name">Маргарита</h3>
                         <p class="team-name-text">Мати Гамлєта</p>
                     </li>
-                    <li>
+                    <li class="team-list">
                         <img class="team-photo" src="./images/misha.jpg" alt="m">
-                        <p class="team-name">Привид</p>
-                        <p class="team-name-text">Страшне чудо, старанно прикрите замизганим в багнюку і сукровицю простирадлом</p>
+                        <h3 class="team-name">Привид</h3>
+                        <p class="team-name-text">Страшне чудо</p>
                     </li>
-                    <li>
+                    <li class="team-list">
                         <img class="team-photo" src="./images/mykola.jpg" alt="m">
-                        <p class="team-name">Клавдій</p>
+                        <h3 class="team-name">Клавдій</h3>
                         <p class="team-name-text">	Хтивий дядько принца</p>
                     </li>
                 </ul>
-    </div>
+            </div>
+        </div>
+        </section>
 </main>
-        <footer class="footer">
-                <a class="logo-header link" href="./index.html">
-                    <span class="logo-header-left">Web</span>
-                    <span class="logo-header-right">Studio</span>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <a class="logo-footer link" href="./index.html">
+                    <span class="logo-footer-left">Web</span>
+                    <span class="logo-footer-right">Studio</span>
                 </a>
-            <address>
+            </div>
+            <address class="address">
                 <ul class="footer-ul">
-                    <li>
+                    <li class="footer-contact">
                         <a class="map" target="blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/AFyEZ38HmAE176y47">Кронборг 1B, 3000 Хельсінгур, Данія</a>
                     </li>
-                    <li>
+                    <li class="footer-contact">
                         <a class="contact-mail" href="milto:info@devstudio.com ">info@devstudio.com</a>
                     </li>
-                    <li>
+                    <li class="footer-contact">
                         <a class="contact-tel" href="tel:+38961111111">+38 096 111 11 11</a>
                     </li>
                 </ul>
             </address>
-        </footer>
+        </div>
+    </footer>
 </body>
 </html>
