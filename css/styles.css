@@ -204,11 +204,11 @@ a:focus{
     padding-bottom: 50px;  
 }
 .hero-btn {
-    width: 216px;
     height: 50px;
     flex-shrink: 0;
     border-radius: 4px;
     background: var(--background-btn--);
+    border-color: var(--background-btn--);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--hero-title--);
     text-align: center;
@@ -216,6 +216,7 @@ a:focus{
     font-weight: 700;
     line-height: 1.87; /* 187.5% */
     letter-spacing: 0.96px;
+    padding: 10px 32px;
 }
 
 .button{
@@ -282,9 +283,6 @@ a:focus{
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
-
-}
-.gallery-items{
     color: #212121;
     text-align: center;
     font-size: 36px;
@@ -431,33 +429,32 @@ a:focus{
     margin-right: 30px;
 }
 
-.customers-list-item{
-    width: 170px;
-    height: 92px;
-    flex-shrink: 0;
-    border-radius: 4px;
-    border: 1px solid #AFB1B8;
+.customers-item-link {
+    padding: 16px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--customers-icon--);
 }
 
 .customers-item-icon {
     fill: var(--customers-icon--);
 }
 
-.customers-list-item:hover,
-.customers-list-item:focus {
-    color: var(--active--);
+.customers-item-link:hover ,
+.customers-item:focus {
+    border-color: var(--active--);
 }
 
 .customers-item-link:hover .customers-item-icon,
-.customers-item-link:focus .customers-item-icon {
+.customers-item-link:focus .customers-item-icon{
     fill: var(--active--);
-    color: var(--active--);
 }
 
-/*--------------Footer-------------*/
+/*------------------Footer----------------------*/
+
 .footer{
     background-color: #2F303A;
 }
@@ -531,6 +528,12 @@ a:focus{
 .footer-social-item {
     width: 44px;
     height: 44px;
+}
+
+
+.footer-social-link {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.10);
     display: flex;
@@ -550,8 +553,8 @@ a:focus{
     justify-content: center;
 }
 
-.footer-social-item:hover,
-.footer-social-item:focus{
+.footer-social-link:hover,
+.footer-social-link:focus{
     background-color: #2196F3;
     scale: 1.3;
 }
