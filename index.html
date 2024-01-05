@@ -13,20 +13,20 @@
 </head>
 <body>
     <header class="header">
-        <div class="menu-header container">
+        <div class="header-wrap container">
         <nav class="navigation">    
             <a class="logo" href="./index.html"><span class="logo-header-left">Web</span><span class="logo-header-right">Studio</span>
             </a>
-                <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="menu-link studio" href="">Студія</a>
+                <div class="header-menu">
+                <ul class="header-menu-list">
+                    <li class="header-menu-item">
+                        <a class="header-menu-link active" href="">Студія</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="/portfolio.html">Портфоліо</a>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="/portfolio.html">Портфоліо</a>
                     </li>
-                    <li class="menu-item">
-                        <a class="menu-link" href="">Контакти</a>
+                    <li class="header-menu-item">
+                        <a class="header-menu-link" href="">Контакти</a>
                     </li>
                 </ul>
                 </div>
@@ -50,12 +50,14 @@
         </div>
     </header>
 <main>
+<!------------------------Hero--------------------------->
     <section class="hero-back">
         <div class="hero container">
             <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="hero-btn button">Замовити послугу</button>
+            <button type="button" class="hero-btn button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
+<!---------------------------About----------------------->
         <div class="about container"> 
             <ul class="about-list list">
             <li class="about-list-text">
@@ -110,22 +112,33 @@
             </li>
             </ul>
         </div>
+<!-------------------------Gallery--------------------------->
         <div class="gallery container">
             <h2 class="gallery-title">Чим ми займаємося</h2>
                 <div class="gallery-wrap">
-                    <ul class="about-gallery">
-                        <li class="gallery-items">
-                        <img class="gallery-photo" src="./images/box-1.jpg" alt="працює за комп">
+                    <ul class="about-gallery-list">
+                        <li class="gallery-list-items">
+                            <div class="photo-item-wrap">
+                                <p class="gallery-photo-text">Десктопні додатки</p>
+                                <img class="gallery-photo" src="./images/box-1.jpg" alt="розроюка дестопних додатків">                        
+                            </div>
                         </li>
-                        <li class="gallery-items">
-                        <img class="gallery-photo" src="./images/box-2.jpg" alt="палить в телефон">
+                        <li class="gallery-list-items">
+                            <div class="photo-item-wrap">
+                                <p class="gallery-photo-text">Мобільні додатки</p>
+                                <img class="gallery-photo" src="./images/box-2.jpg" alt="розробка мобільних додатків">                        
+                            </div>
                         </li>
-                        <li class="gallery-items">
-                        <img class="gallery-photo" src="./images/box-3.jpg" alt="тупить в планшеті">
+                        <li class="gallery-list-items">
+                            <div class="photo-item-wrap">
+                                <p class="gallery-photo-text">Дизайнерські рішення</p>
+                                <img class="gallery-photo" src="./images/box-3.jpg" alt="Веб дизайнер">                        
+                            </div>
                         </li>
                     </ul>
                 </div>
         </div>
+<!----------------------------------Team------------------------------->
         <section class="team">
         <div class="container">
             <h2 class="team-tex">Дійові Особи</h2>
@@ -283,6 +296,7 @@
             </div>
         </div>
         </section>
+<!--------------------------Customers---------------------->
         <div class="cutomers container">
             <h3 class="customers-title">Постійні клієнти</h3>
             <ul class="customers-list">
@@ -331,6 +345,7 @@
             </ul>
         </div>
 </main>
+<!----------------------------Footer------------------------------>
     <footer class="footer">
         <div class="container footer-list">
             <div class="footer-logo">
@@ -386,5 +401,16 @@
                 </div>
         </div>
     </footer>
+<!----------------------------Modal------------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
