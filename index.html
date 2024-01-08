@@ -475,9 +475,13 @@
                 <label for="user-comment" class="modal-form-label">Коментар</label>
                 <textarea id="user-comment" class="modal-form-textarea animation-hover" placeholder="Введіть текст"></textarea>
                 <div class="checkbox-wrap">
-                    <input type="checkbox" name="contract" id="contract" class="modal-checkbox animation-hover"  />
-                        
-                    <label for="contract" class="modal-checkbox-text">Погоджуюся з розсилкою та приймаю</label>
+                    <input type="checkbox" name="contract" id="contract" class="modal-checkbox visually-hidden animation-hover"  />
+                    <label for="contract" class="modal-checkbox-text">
+                        <span class="checkbox-item">
+                            <svg class="checkbox-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-check"></use>
+                            </svg>
+                        </span>Погоджуюся з розсилкою та приймаю</label>
                         <a href="" class="modal-contract-link animation-hover">
                             <span class="modal-link-text">Умови договору</span>
                         </a>

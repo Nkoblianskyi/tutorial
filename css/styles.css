@@ -61,7 +61,9 @@ a:link {
 }
 
 .animation-hover {
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------Header-------------------*/
@@ -784,7 +786,6 @@ a:link {
     border: 1px solid rgba(33, 33, 33, 0.20);
     padding-left: 42px;
     padding-right: 12px;
-
     outline: none;
 }
 
@@ -842,6 +843,35 @@ a:link {
     font-weight: 400;
     line-height: 1.71; /* 171.429% */
     letter-spacing: 0.42px;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-item {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-icon {
+    fill: #ffffff;
+}
+
+.visually-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+}
+
+.modal-checkbox:checked + .modal-checkbox-text .checkbox-item {
+    background-color: var(--active--);
+    border: none;
+    fill: var(--active--);
 }
 
 .modal-link-text {
