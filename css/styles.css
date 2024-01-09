@@ -61,9 +61,7 @@ a:link {
 }
 
 .animation-hover {
-    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1),
-                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-                fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------------Header-------------------*/
@@ -178,7 +176,7 @@ a:link {
 .header-contact-link:hover .header-contact-icon,
 .header-contact-link:focus .header-contact-icon {
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--active--);;
+    fill: var(--active--);
 }
 
 
@@ -220,7 +218,6 @@ a:link {
     flex-shrink: 0;
     border-radius: 4px;
     background: var(--background-btn--);
-    border-color: none;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     color: var(--hero-title--);
     text-align: center;
@@ -235,6 +232,11 @@ a:link {
 .hero-btn:hover ,
 .hero-btn:focus {
     color: #212121;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--active--);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*--------------About------------*/
@@ -489,11 +491,13 @@ a:link {
 
 .customers-item-link:hover ,
 .customers-item-link:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--active--);
 }
 
 .customers-item-link:hover .customers-item-icon,
 .customers-item-link:focus .customers-item-icon{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--active--);
 }
 
@@ -685,8 +689,9 @@ a:link {
 
 .mailing-input:hover,
 .mailing-input:focus {
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: var(--active--);
-}
+
 
 /*----------------------Modal-------------------------*/
 
@@ -737,6 +742,7 @@ a:link {
 }
 
 .modal-close:hover .modal-close-icon{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--active--);
 }
 
@@ -965,8 +971,12 @@ a:link {
 }
 .btn:hover,
 .btn:focus {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--active--);
     color: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 /*-----------------------Gallery Portfolio---------------*/
 .gallery-portfolio{
